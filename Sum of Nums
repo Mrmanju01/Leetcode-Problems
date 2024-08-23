@@ -1,0 +1,12 @@
+%%writefile leetcode1.py
+def sum(nums):
+    n=len(nums)
+    for i in range(n):
+        for j in range(i+1,n):
+            if nums[i]+nums[j]==target:
+                return i,j
+
+k=[2,5,9,70,56]
+target=14
+x=sum(k)
+print(x)
